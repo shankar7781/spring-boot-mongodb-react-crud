@@ -2,7 +2,7 @@ version: '3'
 services:
     front-end:
         container_name: frontend
-        image: frontend
+        image: bharathsharath/frontend
         ports:
             - 8888:3000
     mongodb:
@@ -12,6 +12,6 @@ services:
             - 27017:27017
     back-end:
         container_name: backend
-        image: backend
+        image: bharathsharath/backend
         ports:
           - 9999:8081
